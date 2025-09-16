@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class PasswordPrompt {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String password = "";
+
+        while (!password.equals("JavaRocks")) {
+            System.out.print("Enter password: ");
+            password = scanner.nextLine();
+        }
+
+        System.out.println("Access granted!");
+        scanner.close();
+    }
+}
